@@ -1,0 +1,743 @@
+* {
+	box-sizing: border-box;
+}
+
+body {
+	width: 100%;
+	margin: 0;
+	font-family: 'Lato', sans-serif;
+}
+
+button {
+	cursor: pointer;	
+}
+
+.container {
+	width: 100%;
+	max-width: 1200px;
+	margin: 0 auto;
+}
+
+.row::before, .row::after {
+	content: "";
+	display: table;
+	clear: both;
+}
+
+[class*="col-"] {
+	float: left;
+	min-height: 1px;
+	padding: 20px;
+}
+
+.col-1 {width: 8.33%;}
+.col-2 {width: 16.66%;}
+.col-3 {width: 25%;}
+.col-4 {width: 33.33%;}
+.col-5 {width: 41.66%;}
+.col-6 {width: 50%;}
+.col-7 {width: 58.33%;}
+.col-8 {width: 66.66%;}
+.col-9 {width: 75%;}
+.col-10 {width: 83.33%;}
+.col-11 {width: 91.66%;}
+.col-12 {width: 100%;}
+
+.col-offset-1 {margin-left: 8.33%;}
+.col-offset-2 {margin-left: 16.66%;}
+.col-offset-3 {margin-left: 25%;}
+.col-offset-4 {margin-left: 33.33%;}
+.col-offset-5 {margin-left: 41.66%;}
+.col-offset-6 {margin-left: 50%;}
+.col-offset-7 {margin-left: 58.33%;}
+.col-offset-8 {margin-left: 66.66%;}
+.col-offset-9 {margin-left: 75%;}
+.col-offset-10 {margin-left: 83.33%;}
+.col-offset-11 {margin-left: 91.66%;}
+.col-offset-12 {margin-left: 100%;}
+
+.jumbotron {
+	height: 600px;
+	width: 100%;
+	background: url("https://www.dropbox.com/s/e7u3mojsrhit5m2/woman.png?raw=1") center center;
+	background-size: cover;
+}	
+
+header {
+	position: relative;
+	height: 50px;
+	width: 1200px;
+	margin: 0 auto;
+}
+
+header>nav h1 {
+	margin: 0 auto;
+	line-height: 50px;
+	position: absolute;
+	top: 20px;
+	float: center;
+	color: white;
+}
+
+header>nav h1 span {
+	color: #ed145b;
+	font-size: 25px;
+}
+
+.container {
+	width: 100%;
+	max-width: 1200px;
+	margin: 0 auto;
+}
+
+header>nav ul {
+	position: absolute;
+	top: 20px;
+	right: 0;
+	margin: 0 50px;
+	padding: 0;
+	list-style-type: none;
+	float: right;
+}
+
+header>nav ul>li {
+	display: inline-block;
+}
+
+header>nav ul>li>a {
+	line-height: 50px;
+	text-decoration: none;
+	padding: 0 10px;
+	color: #fff;
+	transition: .35s ease;
+	font-size: 16px;
+	font-weight: 700;
+	line-height: 38px;
+	letter-spacing: 0.4px;
+}
+
+header>nav ul>li>a:hover{
+	color: #ed145b;
+}
+
+.jumbotron .slogan {
+	color: #fff;
+	margin: 30vh auto;
+	text-align: center;
+}
+
+.jumbotron .slogan h1 {
+	font-size: 46px;
+	line-height: 24px;
+	font-weight: 300;
+	letter-spacing: 1.15px;
+}
+
+.jumbotron>.slogan span {
+	font-weight: 700;	
+}
+
+ .line {
+ 	margin: 0 auto;
+	width: 200px;
+	height: 2px;
+	background-color: #ed145b;
+}
+
+.jumbotron>.slogan p {
+	text-align: center;
+	margin: 20px auto;
+	width: 800px;
+	font-weight: 300;
+	font-size: 22px;
+	line-height: 38px;
+	letter-spacing: 0.55px;
+}
+
+.jumbotron>.slogan button {
+	padding: 20px;
+	color: #fff;
+	border: 2px solid #fff;
+	border-radius: 10px;
+	background: none;
+	font-size: 15px;
+	letter-spacing: 0.38px;
+	font-weight: 700;
+	width: 200px;
+	height: 60px;
+	border-radius: 25px;
+	background-color: none;
+	transition: all .35s ease;
+}
+
+.jumbotron>.slogan button:hover {
+	background-color: #ed145b;
+	border-color: #ed145b;
+}
+
+.separate img {
+	position: absolute;
+    left: 0px;
+    top: 560px;
+    z-index: -1;
+	width: 100%;
+	height: 78px;
+	background-color: #f4f4f4;
+}
+
+.laptop {
+	position: relative;
+	margin: 38px 0;
+	height: 646px;
+	background-color: #f4f4f4;
+}
+
+.laptop .text {
+	padding-top: 150px;
+	color: #5a5a5a;	
+}
+
+.laptop h1 {
+	width: 376px;
+	font-weight: 300;
+	font-size: 38px;
+	line-height: 52px;
+	letter-spacing: 0.95px;
+	float: right;
+}
+
+.laptop .line2 {
+	margin-top: 20px;
+	width: 200px;
+	height: 2px;
+	background-color: #ed145b;	
+}
+
+.laptop p {
+	margin-top: 0;
+	width: 376px;
+	height: 165px;
+	color: #5a5a5a;
+	font-size: 15px;
+	font-weight: 300;
+	line-height: 30px;
+	letter-spacing: 0.38px;
+	float: right;
+	margin-left: 50px;
+}
+
+.laptop .see {
+	/* Style for "See the Vi" */
+	padding: 20px 0;
+	height: 12px;
+	color: #ed145b;
+	font-size: 15px;
+	font-weight: 400;
+	line-height: 30px;
+	text-transform: uppercase;
+	/* Text style for "S, ee the" */
+	letter-spacing: 0.38px;
+}
+
+.laptop .see img {
+	margin-left: 10px;
+	padding: 6px;
+	border: 1px solid #ed145b;
+	border-radius: 50%;
+	
+}
+
+.macbook  img {
+	position: absolute;
+	max-width: 650px;
+	bottom: 0;
+
+}
+
+.macbook .design {
+	width: 480px;
+	margin-left: 84px;
+	margin-bottom: 44px;
+}
+
+.service {
+	height: 480px;
+	background-color: #fff;	
+}
+
+.service h1 {
+	margin: 20px 0;
+	text-align: center;
+	height: 29px;
+	color: #5a5a5a;
+	font-size: 38px;
+	font-weight: 400;
+	line-height: 52px;
+	letter-spacing: 0.95px;	
+}
+
+.service p {
+	margin: 20px auto; 
+	text-align: center;
+	width: 681px;
+	height: 44px;
+	color: #5a5a5a;
+	font-family: Lato;
+	font-size: 15px;
+	font-weight: 300;
+	line-height: 30px;
+	letter-spacing: 0.38px;	
+}
+
+.service .rowcard {
+	width: 100%;	
+	margin: 40px auto;
+}
+
+.service .icon {
+	margin: 40px auto;
+	display: block;   
+}
+
+.service .card {
+	margin: 0 auto;
+	width: 131px;
+	height: 131px;
+	border: 1px solid rgba(0, 0, 0, 0.3);
+	border-radius: 50%;
+	text-align: center; 
+}
+
+.rowcard h2 {
+	padding: 20px 0;
+	color: #ed145b;
+	font-size: 15px;
+	height: 12px;
+	font-weight: 400;
+	line-height: 30px;
+	text-transform: uppercase;
+	letter-spacing: 0.38px;
+}
+
+.quates {
+	height: 550px;
+	width: 100%;
+	background: url("https://www.dropbox.com/s/ieducumpwa9kpo8/quates.png?raw=1") center center;
+	background-size: cover;
+	text-align: center;
+}
+
+.quates h1 {
+	margin: 0 auto;
+	color: #ed145b;
+	font-size: 158px;
+	font-weight: 700;
+	font-family: 'Coustard', serif;
+	letter-spacing: 3.95px;
+}
+
+.quates p {
+	margin: 0 auto;
+	width: 60%;
+	padding-bottom: 50px;
+	color: #ffffff;
+	font-size: 25px;
+	font-weight: 400;
+	line-height: 40px;
+	letter-spacing: 0.63px;	
+}
+
+.prices {
+	background-color: #f4f4f4;
+	height: 900px;
+	text-align: center;
+}
+
+.prices h1 {
+	margin-top: 60px;
+	color: #5a5a5a;
+	font-size: 38px;
+	font-weight: 400;
+	line-height: 52px;
+	letter-spacing: 0.95px;
+}
+
+.prices p {
+	padding: 0 100px;
+	color: #5a5a5a;
+	font-size: 15px;
+	font-weight: 300;
+	line-height: 30px;
+	letter-spacing: 0.38px;	
+}
+
+.card {
+	position: relative;
+	text-align: center;
+}
+
+.card .cardheader {
+	width: 262px;
+	height: 150px;
+	background-color: #5a5a5a;
+	transition: all .35s ease;
+}
+
+.card:hover .cardheader {
+	background-color: #ed145b;	
+}
+
+.card>.cardheader p {
+	padding: 40px 0;
+	color: #f4f4f4;
+	font-size: 15px;
+	font-weight: 700;
+	line-height: 20px;
+	letter-spacing: 0.38px;
+}
+
+.card>.cardheader span {
+	font-size: 50px;	
+} 
+
+.card .cardtitle {
+	top: 125px;
+	position: absolute;
+	margin: 0 24px;
+	width: 200px;
+	height: 50px;
+	border-radius: 30px;
+	background-color: #f4f4f4;
+	color: #5a5a5a;
+}
+
+.card .cardbody {
+	padding: 40px 0;
+	width: 262px;
+	height: 316px;
+	background-color: #fff;	
+}
+
+.card>.cardbody p {
+	color: #5a5a5a;
+	font-size: 15px;
+	font-weight: 300;
+	letter-spacing: 0.38px;
+}
+
+.card>.cardbody h4 {
+	color: #5a5a5a;
+	font-size: 15px;
+	font-weight: 300;
+	letter-spacing: 0.38px;	
+}
+
+.card>.cardbody button {
+	font-weight: 700;
+	font-size: 15px;
+	margin: 20px 0;
+	color: #ed145b;
+	width: 200px;
+	height: 50px;
+	border: 1px solid #ed145b;
+	border-radius: 25px;
+	background-color: #fff;
+	cursor: pointer;
+	transition: all .35s ease;
+}
+
+.card>.cardbody button:hover {
+	color: #fff;
+	background-color: #ed145b;
+}
+
+.additional img {	
+	padding: 20px 0;
+}
+
+.additional h3 {
+	color: #ed145b;
+	font-size: 15px;
+	font-weight: 700;
+	line-height: 30px;
+	text-transform: uppercase;
+	letter-spacing: 0.38px;	
+}
+
+.additional p {
+	color: #5a5a5a;
+	font-size: 15px;
+	font-weight: 300;
+	line-height: 30px;
+	letter-spacing: 0.38px;	
+}
+
+.join {
+	height: 200px;
+	background-color: #ed145b;
+	text-align: center;
+	font-weight: 200;
+}
+
+.join h1 {
+	padding-top: 30px;
+	color: #fff;
+	font-size: 38px;
+	line-height: 52px;
+	letter-spacing: 0.95px;	
+}
+
+.join button {
+	width: 200px;
+	height: 50px;
+	border-radius: 25px;
+	background-color: #ed145b;
+	color: #fff;
+	font-size: 15px;
+	letter-spacing: 0.38px;
+	font-weight: 700;
+	border: none;
+	line-height: 52px;
+	cursor: pointer;
+	border: 1px solid #fff;
+	transition: all .35s ease;
+}
+
+.join button:hover {
+	color: #ed145b;
+	background-color: #fff;
+}
+
+.news {
+	text-align: center;	
+}
+
+.news h1 {
+	padding-top: 40px;
+	color: #5a5a5a;
+	font-size: 38px;
+	font-weight: 400;
+	line-height: 52px;
+	letter-spacing: 0.95px;	
+}
+
+.news p {
+	padding: 0 200px;
+	padding-bottom: 40px;
+	color: #5a5a5a;
+	font-size: 15px;
+	font-weight: 300;
+	line-height: 30px;
+	letter-spacing: 0.38px;	
+}
+
+.news .newscard {
+	width: 360px;
+	height: 390px;
+	background-color: #f4f4f4;
+	color: #5a5a5a;
+	text-align: left;
+}
+
+.newscard .photo {
+	position: relative;
+	width: 100%;
+	height: 250px;	
+}
+
+.one {
+	background: url("https://www.dropbox.com/s/ggjkmo5vk4uu81h/news1.png?raw=1") center center;
+	background-size: cover;	
+}
+
+.two {
+	background: url("https://www.dropbox.com/s/pafgxbzutdywpa2/news2.png?raw=1") center center;
+	background-size: cover;	
+}
+
+.three {
+	background: url("https://www.dropbox.com/s/jbhnhzfx4spmkwo/news5.png?raw=1") center center;
+	background-size: cover;	
+}
+
+.four {
+	background: url("https://www.dropbox.com/s/jbhnhzfx4spmkwo/news5.png?raw=1") center center;
+	background-size: cover;	
+}
+
+.five {
+	background: url("https://www.dropbox.com/s/td3o2igyu1xim3r/news4.png?raw=1") center center;
+	background-size: cover;	
+}
+
+.six {
+	background: url("https://www.dropbox.com/s/q3xa661epbt84f0/news3.png?raw=1") center center;
+	background-size: cover;	
+}
+
+.newscard .layer {
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	position: absolute;
+	text-align: center;
+	line-height: 240px;
+	background-color: #ed145b;
+	transition: transform 0.3s;
+	transform-origin: bottom;
+	transition-delay: 0.2s;
+    transform: scaleY(0);
+    opacity: 0.5;
+    color: #fff;
+    font-size: 42px;
+}
+
+.newscard:hover .layer {
+	transform: scaleY(1);
+}
+
+.newscard>.photo img {
+	position: absolute;
+	bottom: 0;
+	left: 0;
+}
+
+.newscard>.description h3 {
+	padding: 0 20px;
+	padding-top: 10px;
+	font-size: 15px;
+	font-weight: 700;
+	text-transform: uppercase;/
+	letter-spacing: 0.38px;
+}
+
+.newscard>.description h4 {
+	padding: 0 20px;
+	font-size: 15px;
+	font-weight: 300;
+	letter-spacing: 0.38px;	
+}
+
+.news>.more a {
+	color: #ed145b;
+	font-size: 15px;
+	font-weight: 400;
+	letter-spacing: 0.38px;	
+	text-decoration: none;	
+}
+
+.news>.more i {
+	font-size: 24px;
+	padding-bottom: 40px;
+}
+
+.additionaltwo {
+	width: 100%;
+	height: 650px;
+	background: url("https://www.dropbox.com/s/ieducumpwa9kpo8/quates.png?raw=1") center center;
+	background-size: cover;
+	text-align: center;
+	color: #fff;
+}
+
+.additionaltwo h1 {
+	padding-top: 200px;
+	font-size: 38px;
+	font-weight: 400;
+	line-height: 52px;
+	letter-spacing: 0.95px;	
+}
+
+.additionaltwo p {
+	padding: 0 200px;
+	font-size: 15px;
+	font-weight: 300;
+	letter-spacing: 0.38px;
+	line-height: 30px;
+}
+
+.additionaltwo button {
+	padding: 20px;
+	color: #fff;
+	border: 2px solid #fff;
+	border-radius: 10px;
+	background: none;
+	font-size: 15px;
+	letter-spacing: 0.38px;
+	font-weight: 700;
+	width: 200px;
+	height: 60px;
+	border-radius: 25px;
+	background-color: none;
+	transition: all .35s ease;
+}
+
+.additionaltwo button:hover {
+	background-color: #ed145b;
+	border-color: #ed145b;
+}
+
+.download {
+	color: #5a5a5a;
+	text-align: left;
+	height: 680px;
+	background-color: #f4f4f4;
+}
+
+.download img {
+	padding-top: 160px;
+	max-width: 560px;	
+}
+
+.download .line {
+	margin: 0;	
+}
+
+.download h1 {
+	padding-top: 120px;
+	font-size: 38px;
+	font-weight: 400;
+	line-height: 52px;
+	letter-spacing: 0.95px;	
+}
+
+.download p {
+	font-size: 15px;
+	font-weight: 300;
+	line-height: 30px;
+	letter-spacing: 0.38px;
+	padding: 20px 0;
+}
+
+.download button {
+	width: 200px;
+	height: 50px;
+	border-radius: 25px;
+	background-color: #f4f4f4;
+	font-size: 15px;
+	font-weight: 700;
+	line-height: 38px;
+	letter-spacing: 0.38px;
+	border: 1px solid #ed145b;
+	color: #ed145b;
+	transition: all .35s ease;
+}
+
+.download button:hover {
+	color: #fff;
+	background-color: #ed145b;	
+}
+
+footer {
+	height: 120px;
+	background-color: #2b2b2b;
+	text-align: center;
+}
+
+footer h3 {
+	color: #ffffff;
+	font-size: 16px;
+	font-weight: 400;
+	line-height: 40px;	
+}
